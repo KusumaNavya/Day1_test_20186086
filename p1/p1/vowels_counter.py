@@ -8,6 +8,6 @@ def main():
     for char in s_v:
         if char in "AEIOUaeiou":
             c_v += 1
-    print("Number of vowels are:"+str(c_v))
+    print(c_v)
 if __name__ == "__main__":
     main()
