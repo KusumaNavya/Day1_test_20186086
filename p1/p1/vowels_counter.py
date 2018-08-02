@@ -3,7 +3,7 @@
 """number of vowels"""
 def main():
     """find number of vowels"""
-    s_v = input("Enter a string:")
+    s_v = input()
     c_v = 0
     for char in s_v:
         if char in "AEIOUaeiou":
