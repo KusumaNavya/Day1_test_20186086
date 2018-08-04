@@ -12,7 +12,8 @@ NUM = int(input())
 i = 0
 for i in range(NUM):
     if i%3 == 0 and i%5 == 0:
-        print("fizzbuzz")
+        print("fizz")
+        print("buzz")
     elif i%3 == 0:
         print("fizz")
     elif i%5 == 0:
