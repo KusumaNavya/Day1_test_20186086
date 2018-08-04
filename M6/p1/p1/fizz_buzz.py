@@ -10,8 +10,8 @@ def main():
     '''
 NUM = int(input())
 i = 1
-for i in range(NUM):
-    if i%3 == 0 and i%5 == 0:
+while i <= NUM:
+    if (i%3 == 0 and i%5 == 0):
         print("fizz")
         print("buzz")
     elif i%3 == 0:
