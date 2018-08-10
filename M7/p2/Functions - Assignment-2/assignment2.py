@@ -42,8 +42,7 @@ def paying_debtoffinayear(bal_ance, annual_interestrate):
             i -= 1
         if ba_l > 0:
             pa_y += 10
-     
-       else:
+        else:
             break
     return pa_y
 def main():
@@ -54,3 +53,4 @@ def main():
     print("Lowest Payment: " + str(paying_debtoffinayear(data[0], data[1])))
 if __name__ == "__main__":
     main()
+    
