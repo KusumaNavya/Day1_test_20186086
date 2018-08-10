@@ -25,14 +25,11 @@ def isValidWord(word, hand, wordList):
         for i in hand:
             if i in word:
                 c= c+1
-    print(c)
+    
     if c == l:
         
         return True
     return False
-    
-
-
 def main():
     word=input()
     n=int(input())
@@ -42,9 +39,6 @@ def main():
         l=data.split()
         adict[l[0]]=int(l[1])
     l2=list(input().split())
-    
-        
-
-
+    print(isValidWord(word,adict,l2))
 if __name__== "__main__":
     main()
