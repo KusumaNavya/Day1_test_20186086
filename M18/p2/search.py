@@ -39,6 +39,12 @@ def search(search_index, query):
     '''
     query = query.lower().split(" ")
     print(query)
+    for word in query:
+        if word in search_index:
+            for i in range(len(search_index[word])):
+                l1 = l1.append(search_index[word][i][0])
+            print(l1)
+
 
 def process_queries(search_index, queries):
     '''
