@@ -46,7 +46,7 @@ def search(search_index, query):
                 print(tup[0])
                 l1.append(tup[0])
     print(l1)
-
+    return set(l1)
 
 def process_queries(search_index, queries):
     '''
