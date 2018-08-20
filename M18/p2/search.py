@@ -42,8 +42,8 @@ def search(search_index, query):
     l1 = []
     for word in query:
         if word in search_index:
-            for i in range(len(search_index[word])):
-                l1 = l1.append(search_index[word][i][0])
+            for tup in search_index[word]:
+                l1 = l1.append(tup[0])
             print(l1)
 
 
