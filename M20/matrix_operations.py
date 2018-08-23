@@ -5,18 +5,30 @@ def mult_matrix(m1, m2):
         print an error message if the matrix shapes are not valid for mult
         and return None
         error message should be "Error: Matrix shapes invalid for mult"
-    '''
-    mult = []
-    result = 0
-    if len(m1) == len(m2[0]):
+    # '''
+    # mult = []
+    # result = 0
+    # if len(m1) == len(m2[0]):
+    #     for i in range(len(m1)):
+    #         lst = []
+    #         for j in range(len(m1[0])):
+    #             for k in range(len(m2[0])):
+    #                 result += int(m1[i][k]) * int(m2[k][j])
+    #                 lst.append(result)
+    #         mult.append(lst)
+    #     return mult
+    if len(m1[0]) == len(m2):
+        result = []
         for i in range(len(m1)):
             lst = []
-            for j in range(len(m1[0])):
-                for k in range(len(m2[0])):
-                    result += int(m1[i][k]) * int(m2[k][j])
-                    lst.append(result)
-            mult.append(lst)
-        return mult
+            for j in range(len(m2[0])):
+                s = 0
+                for k in range(len(m2)):
+                    s += m1[i][k] * m2[k][j]
+                lst.append(s)
+            result.append(lst)
+
+
     else:
         print("Error: Matrix shapes invalid for mult")
         return None
