@@ -15,7 +15,7 @@ def mult_matrix(m1, m2):
                 for k in range(len(m2[0])):
                     result += int(m1[i][k]) * int(m2[k][j])
                     lst.append(result)
-                    mult.append(lst)
+            mult.append(lst)
         return mult
     else:
         print("Error: Matrix shapes invalid for mult")
