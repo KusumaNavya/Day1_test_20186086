@@ -8,7 +8,7 @@ def tokenize(string):
     t = {}
     l = []
     for line in string:
-        l.append(reg.sub('',line).split())
+        l.append(regex.sub('',line).split())
 
     for s in l:
         for w in s:
