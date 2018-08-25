@@ -8,8 +8,6 @@ def frequency_graph(dictionary):
     n.sort()
     for key in n:
         print(str(key)+' - '+str(dictionary[key]*'#'))
-
-
 def main():
     dictionary = eval(input())
     frequency_graph(dictionary)
