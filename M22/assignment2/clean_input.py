@@ -4,11 +4,11 @@ alphabets in both upper and lower case and numbers.
 '''
 import re
 def clean_string(string):
+    """clean"""
     regex = re.compile("[^a-z,0-9]")
-    return regex.sub("",string)
-   
+    return regex.sub("", string)
 def main():
-	
+    
 
     string = input()
     print(clean_string(string))
