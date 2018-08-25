@@ -7,9 +7,9 @@ def clean_string(string):
     regex = re.compile("[^a-b][^0-9]")
     return regex.sub("",string)
     l = []
-	for _ in range(string):
+	for _ in range(regex):
 		l.append(input().split())
-		print(l)
+		
 def main():
 	
 
