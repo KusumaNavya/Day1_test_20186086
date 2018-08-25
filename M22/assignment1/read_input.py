@@ -4,11 +4,11 @@ Write a python program to read multiple lines of text input and store the input 
 
 def main():
     line = int(input())
-    l = []
+    l_l = []
     for _ in range(line):
-    	l.append(input())
-    for each_line in l:
-    	print(each_line)
+        l_l.append(input())
+    for each_line in l_l:
+        print(each_line)
 
 
 if __name__ == '__main__':
