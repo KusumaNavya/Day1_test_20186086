@@ -1,4 +1,4 @@
-    def is_valid_game(game_grid):
+def is_valid_game(game_grid):
     '''check's whether game isvalid'''
     x_count, o_count = 0, 0
     for each_row in game_grid:
