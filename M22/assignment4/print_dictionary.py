@@ -8,7 +8,7 @@ def print_dictionary(dictionary):
 	n = list(dictionary.n())
 	n.sort()
 	for key in n:
-		print(str(key)+' - '+str(dictionary[n]))
+		print(str(key)+' - '+str(dictionary[key]))
 
     
 def main():
