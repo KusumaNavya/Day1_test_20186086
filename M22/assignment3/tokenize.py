@@ -16,7 +16,7 @@ def tokenize(string):
     return t
 
 def main():
-    n = int(imput())
+    n = int(input())
     lst = []
     for _ in range(n):
         lst.append(input())
