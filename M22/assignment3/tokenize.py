@@ -12,7 +12,7 @@ def tokenize(string):
 
     for s in l:
         for w in s:
-            t[s] = t.get(w,0) + 1
+            t[s] = t.get(w, 0) + 1
     return t
 
 def main():
