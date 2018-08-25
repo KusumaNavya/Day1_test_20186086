@@ -5,10 +5,10 @@ the key and frequency with a SPACE - SPACE.
 '''
 
 def print_dictionary(dictionary):
-	n = list(dictionary.keys())
-	n.sort()
-	for key in n:
-		print(str(key)+' - '+str(dictionary[key]))
+    n = list(dictionary.keys())
+    n.sort()
+    for key in n:
+        print(str(key)+' - '+str(dictionary[key]))
 
     
 def main():
