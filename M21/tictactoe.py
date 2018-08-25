@@ -25,53 +25,53 @@ def horizontal_check(game_grid):
 
 def vertical_check(game_grid):
     '''checks vertical'''
-    win_count = 0
-    win_flag = game_grid[0][0]
-    grid_length = len(game_grid)
-    for i in range(grid_length):
-        if win_count == 3:
+    win_c = 0
+    win_n = game_grid[0][0]
+    grid_l = len(game_grid)
+    for i in range(grid_l):
+        if win_c == 3:
             break
-        win_count = 0
-        win_flag = game_grid[0][i]
-        if win_flag == '.':
+        win_c = 0
+        win_n = game_grid[0][i]
+        if win_n == '.':
             continue
-        for j in range(grid_length):
-            if game_grid[j][i] == win_flag:
-                win_count += 1
+        for j in range(grid_l):
+            if game_grid[j][i] == win_n:
+                win_c += 1
             else:
                 break
-    if win_count == 3:
-        return win_flag
+    if win_c == 3:
+        return win_n
     return None
 
 def diagonal_left_to_right(game_grid):
     '''checks diagonal left to right'''
-    grid_length = len(game_grid)
-    win_flag = game_grid[0][0]
-    win_count = 0
-    if win_flag != '.':
-        for i in range(grid_length):
-            if game_grid[i][i] == win_flag:
-                win_count += 1
+    grid_l = len(game_grid)
+    win_n = game_grid[0][0]
+    win_c = 0
+    if win_n != '.':
+        for i in range(grid_l):
+            if game_grid[i][i] == win_n:
+                win_c += 1
             else:
                 break
-    if win_count == 3:
-        return win_flag
+    if win_c == 3:
+        return win_n
     return None
 
 def diagonal_right_to_left(game_grid):
     '''checks diagonal right to left'''
-    grid_length = len(game_grid)
-    win_flag = game_grid[0][-1]
-    win_count = 0
-    if win_flag != '.':
-        for i in range(grid_length):
-            if game_grid[i][-i-1] == win_flag:
-                win_count += 1
+    grid_l = len(game_grid)
+    win_n = game_grid[0][-1]
+    win_c = 0
+    if win_n != '.':
+        for i in range(grid_l):
+            if game_grid[i][-i-1] == win_n:
+                win_c += 1
             else:
                 break
-    if win_count == 3:
-        return win_flag
+    if win_c == 3:
+        return win_n
     return None
 
 def play_game(game_grid):
@@ -87,5 +87,4 @@ def main():
     for _ in range(GRID_LINES):
         INPUT_GRID.append(input().split())
     print(play_game(INPUT_GRID))
-
 main()
