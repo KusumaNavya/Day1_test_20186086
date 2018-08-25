@@ -6,8 +6,13 @@ import re
 def clean_string(string):
     regex = re.compile("[^a-b][^0-9]")
     return regex.sub("",string)
-    
+    l = []
+	for _ in range(n):
+		l.append(input().split())
+		print(l)
 def main():
+	
+
     string = input()
     print(clean_string(string))
 
